@@ -1,11 +1,13 @@
-import react from "react";
-import title from "../title";
-import ItemsList from "../../components/ItemsList";
-import {useParams} from 'react-router-dom';
+import React from "react";
+import Title from "../Title/title";
+import ItemList from "../ItemList"
+import {UseParams} from "module";
 
-export const itemlistcontainer = () =>{
+
+const ItemListContainer = () =>{
 return (
     <title greeting='Bienvenido' />
 )
-}
-export default itemlistcontainer
+};
+
+export default ItemListContainer

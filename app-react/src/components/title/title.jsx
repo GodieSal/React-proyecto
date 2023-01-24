@@ -1,9 +1,9 @@
-import react from "react";
+import React from "react";
 
-export const title = (props) => {
+const Title = (props) => {
     return (
         <h1>(props.greeting)</h1>
     )
-}
+};
 
-export default title;
+export default Title
