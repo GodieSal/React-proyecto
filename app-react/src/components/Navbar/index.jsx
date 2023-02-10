@@ -1,6 +1,7 @@
 import React from "react";
-import CartWidget from "../CartWidget/CartWidget";
-import { NavLink } from "react-router-dom";
+import CartWidget from "../CartWidget";
+import "./styles.css";
+import {Link} from 'react-router-dom';
 
 
 
@@ -8,33 +9,29 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
 
 
+
     return (
         <>
-        <ul className="navbar-fondo">
+ <ul className="navbar-fondo">
             <li>
-            <NavLink className ="nav_link" to="/">Menu principal</NavLink>
+                <Link to="/">Menu principal</Link>
             </li>
             <li>
-            <NavLink className ="nav_link" to="/category/Servicios">Servicios
-                </NavLink>
+                <Link to="/category/PlanPersonalizado">Planes personalizados
+                </Link>
             </li>
             <li>
-            <NavLink className ="nav_link" to="/category/Online-coaching">Online-coaching-personalizado
-                </NavLink>
+                <Link to="/category/Recomposicion">Recomposicion corporal
+                </Link>
             </li>
             <li>
-            <NavLink className ="nav_link" to="/category/Transformaciones">Transformaciones</NavLink>
+                <Link to="/category/Fuerza-hip">Fuerza e hipertrofia </Link>
             </li>
             <li>
-            <NavLink className ="nav_link" to="/category/Cuenta">Mi cuenta</NavLink>
-            </li>
-            <li>
-                <NavLink className ="nav_link" to="Cart"> 
-                <CartWidget> 
-                </NavLink>
+                <Link to="/category/FuerzaPura"> Fuerza Pura</Link>
             </li>
             
-            <Link to="">
+            <Link to="/cart">
                 <CartWidget>
             
                 </CartWidget>
@@ -46,4 +43,5 @@ const NavBar = () => {
         </>
     );
 };
-export default NavBar
+
+export default NavBar;
